@@ -562,3 +562,22 @@ figure {
 .footer-credit-link:hover {
 	font-style: italic;
 }
+
+/* ==== MEDIA ==== */
+@media (max-width: 1024px) {
+	#navbar {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.projects-group {
+		gap: 5rem;
+	}
+	.skills-blockquote {
+		width: 100%;
+	}
+	.skills-group {
+		width: 100%;
+	}
+}
