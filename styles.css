@@ -119,6 +119,10 @@ figure {
 	background: #5a3e2b;
 }
 
+.milk-magic-haven {
+	background: #0f83b2;
+}
+
 /* ==== NAVBAR ==== */
 #header {
 	position: fixed;
@@ -234,6 +238,34 @@ figure {
 	margin: 1rem 0;
 }
 
+.welcome-contact-cv {
+	margin-top: 42px;
+}
+
+.welcome-contact-cv .cta-link {
+	display: inline-block;
+	padding: 1rem 5rem;
+	cursor: pointer;
+	border-radius: 100px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+.welcome-contact-cv .cta-link.contact {
+	background-color: #4b3832;
+	color: #fff;
+}
+
+.welcome-contact-cv .cta-link.contact:hover {
+	background-color: #fff;
+	color: #4b3832;
+}
+
+.welcome-contact-cv .cta-link.cv:hover {
+	background-color: #4b3832;
+	color: #fff;
+}
+
 /* ==== PROJECTS ==== */
 #projects {
 	width: 80%;
@@ -303,4 +335,120 @@ figure {
 	background-color: #4b3832;
 	color: #fff;
 	animation: smallfloat 0.5s infinite alternate;
+}
+
+/* ==== SKILLS ==== */
+#skills {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.skills-title {
+	position: relative;
+	color: #111827;
+	font-size: 6.8rem;
+	font-weight: 600;
+}
+
+.skills-title svg {
+	position: absolute;
+	bottom: -20px;
+	left: 80px;
+	z-index: -1;
+}
+
+.skills-avatar .pencil {
+	position: absolute;
+	top: 100px;
+	right: 350px;
+	z-index: 100;
+}
+
+.skills-avatar .crown {
+	position: absolute;
+	top: 140px;
+	right: 480px;
+	z-index: 100;
+}
+
+.skills-avatar .up-arrow {
+	position: absolute;
+	top: 500px;
+	right: 150px;
+	z-index: 100;
+}
+
+.skills-avatar .lightning {
+	position: absolute;
+	top: 300px;
+	right: 550px;
+	z-index: 100;
+}
+
+.skills-avatar .big-star {
+	position: absolute;
+	top: 220px;
+	right: 160px;
+	z-index: 100;
+}
+
+.skills-avatar .small-star {
+	position: absolute;
+	top: 260px;
+	right: 190px;
+	z-index: 100;
+}
+
+.skills-avatar-img {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	width: 530px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.skills-blockquote {
+	margin: 0;
+	margin-top: 67px;
+	font-size: 2.4rem;
+	width: 50%;
+	padding-left: 40px;
+	border-left: 5px solid #4b3832;
+}
+
+.skills-subtitle {
+	font-size: 5.2rem;
+	font-weight: 600;
+	margin-top: 48px;
+}
+
+.skills-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 50%;
+}
+
+.skill-image {
+	padding: 10px;
+	border-radius: 40px;
+	background: #f0f9ff;
+}
+
+.skill-image-img {
+	display: block;
+	width: 124px;
+	height: 124px;
+	border-radius: 40px;
+}
+
+.skill-name {
+	font-size: 2.4rem;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 24px;
 }
