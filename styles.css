@@ -271,6 +271,7 @@ figure {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 80px;
+	padding-top: 100px;
 }
 
 .projects-title {
@@ -343,6 +344,7 @@ figure {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 80px;
+	padding-top: 100px;
 }
 
 .skills-title {
@@ -361,49 +363,49 @@ figure {
 
 .skills-avatar .pencil {
 	position: absolute;
-	top: 100px;
+	top: 200px;
 	right: 350px;
 	z-index: 100;
 }
 
 .skills-avatar .crown {
 	position: absolute;
-	top: 140px;
+	top: 240px;
 	right: 480px;
 	z-index: 100;
 }
 
 .skills-avatar .up-arrow {
 	position: absolute;
-	top: 500px;
+	top: 600px;
 	right: 150px;
 	z-index: 100;
 }
 
 .skills-avatar .lightning {
 	position: absolute;
-	top: 300px;
+	top: 400px;
 	right: 550px;
 	z-index: 100;
 }
 
 .skills-avatar .big-star {
 	position: absolute;
-	top: 220px;
+	top: 320px;
 	right: 160px;
 	z-index: 100;
 }
 
 .skills-avatar .small-star {
 	position: absolute;
-	top: 260px;
+	top: 360px;
 	right: 190px;
 	z-index: 100;
 }
 
 .skills-avatar-img {
 	position: absolute;
-	top: 100px;
+	top: 200px;
 	right: 100px;
 	width: 530px;
 	height: auto;
