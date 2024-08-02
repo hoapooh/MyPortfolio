@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+/* ==== COMMON ==== */
+.floating {
+	animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+@keyframes smallfloat {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}
+
+/* ==== LANGUAGE STYLE ==== */
+.bg-html {
+	background-color: #f16529;
+}
+
+.bg-css {
+	background-color: #2965f1;
+}
+
+.bg-react {
+	color: #62dafc !important;
+	background-color: #1d253a;
+}
+
+.bg-csharp {
+	background-color: #68217a;
+}
+
+.bg-js {
+	color: #000 !important;
+	background-color: #f0db4f;
+}
+
+.bg-node {
+	background-color: #80bd01;
+}
+
+.bg-java {
+	background-color: #f89820;
+}
+
+.bg-jsp {
+	background-color: #0074a3;
+}
+
+.bg-jquery {
+	background-color: #0868ac;
+}
+
+.bg-sql {
+	background-color: #f29111;
+}
+
+/* ==== PROJECT STYLE ==== */
+.dentalcare {
+	background: #e6f6fe;
+}
+
+.travel-list {
+	background: #5a3e2b;
+}
+
+/* ==== NAVBAR ==== */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: #fff;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+
+.navbar-logo-name {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-logo {
+	width: 50px;
+	border-radius: 50%;
+}
+
+.navbar-name {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+.navbar-link {
+	position: relative;
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #333;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-link:not(:last-of-type)::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0;
+	height: 2px; /* Độ dày của dòng chảy */
+	background-color: #4b3832; /* Màu của dòng chảy */
+	transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Hiệu ứng mượt mà */
+}
+
+.navbar-link:hover {
+	color: #4b3832;
+}
+
+.navbar-link:not(:last-of-type):hover::after {
+	width: 100%;
+	left: 0;
+}
+
+.navbar-link.hire-me {
+	background-color: #fff;
+	color: #4b3832;
+	border: 1px solid #4b3832;
+	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-link.hire-me:hover {
+	background-color: #4b3832;
+	color: #fff;
+}
+
+/* ==== WELCOME ==== */
+#welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(99deg, #fbed96 -1%, #abecd6 92.31%);
+}
+
+.welcome-avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.welcome-title {
+	font-size: 6.8rem;
+	font-weight: 200;
+	color: #4b3832;
+	margin: 1rem 0;
+}
+
+.welcome-subtitle {
+	font-size: 2.4rem;
+	font-style: normal;
+	color: #4b3832;
+	font-weight: bold;
+}
+
+.welcome-details {
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin: 1rem 0;
+}
+
+/* ==== PROJECTS ==== */
+#projects {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.projects-title {
+	color: #111827;
+	font-size: 6.8rem;
+}
+
+.projects-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10rem;
+}
+
+.project {
+	flex: 1;
+}
+
+.project-name {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.project-techs {
+	margin-top: 20px;
+}
+
+.project-techs .tech {
+	font-size: 1.6rem;
+	font-weight: 500;
+	display: inline-block;
+	padding: 0.8rem 1.6rem;
+	margin-right: 10px;
+	color: #fff;
+	border-radius: 100px;
+}
+
+.project-image {
+	margin-top: 20px;
+	border-radius: 18px;
+	padding: 34px 12px 24px 12px;
+}
+
+.project-image img {
+	width: 100%;
+	height: auto;
+}
+
+.project-references {
+	margin-top: 20px;
+}
+
+.project-references .cta-link {
+	display: inline-block;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	border-radius: 100px;
+	transition: all 0.3s ease-in-out;
+}
+
+.project-references .cta-link:hover {
+	background-color: #4b3832;
+	color: #fff;
+	animation: smallfloat 0.5s infinite alternate;
+}
